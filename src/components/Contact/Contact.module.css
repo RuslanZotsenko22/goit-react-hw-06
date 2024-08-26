@@ -1,37 +1,45 @@
-li {
-  max-width: 300px;
-}
-input {
-  max-width: 300px;
-}
-
-.contact {
-  position: relative;
+.list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid darkgray;
   border-radius: 5px;
   margin-bottom: 10px;
-  background-color: white;
-
-  font-weight: 600;
 }
 
-.deleteBtn {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  border-radius: 20%;
-  border: 2px solid black;
-  background-color: white;
+.contactItem {
   display: flex;
-  padding: 0;
-  width: 50px;
-  height: 40px;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.cardName {
+  font-size: 16px;
+  font-weight: bold;
+  /* color: white; */
+}
+
+.cardNumber {
+  font-size: 14px;
+  color: white;
+}
+
+.button {
+  padding: 10px 15px;
+  align-self: flex-end;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: darkred;
 }
